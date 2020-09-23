@@ -1,0 +1,174 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+/* Nav Bar*/
+#header {
+  display: flex;
+  background-color: #3e3e44;
+  color: #e5e5e5;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+#header.active {
+  height: 150px;
+}
+
+#mainNav a {
+  text-decoration: none;
+  color: #e5e5e5;
+  margin-inline-end: 40px;
+}
+
+.navList li {
+  list-style-type: none;
+}
+
+.navList {
+  display: flex;
+}
+
+#mainNav {
+  display: flex;
+}
+
+/*
+    position: relative;
+  }*/
+
+#title {
+  margin-inline-start: 40px;
+}
+
+/* Projects Dropdown*/
+
+.projectList {
+  position: absolute;
+}
+.projectsDropdown a:hover {
+  text-decoration: none;
+  color: #e5e5e5;
+  background-color: #3e3e44;
+}
+
+.projectsDropdown a {
+  color: #e5e5e5;
+  margin-inline-end: 40px;
+  text-decoration: none;
+}
+
+.projectsDropdown {
+  margin-left: -40px;
+  display: none;
+  line-height: 2;
+}
+/* orig.
+    top: 50px;
+    width: 150px; */
+
+#aboutCard {
+  background-color: #f2e2e5;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 50px;
+  border-radius: 10px;
+}
+.highlight {
+  color: #2699fb;
+}
+
+#aboutCard h1 {
+  margin-left: 50px;
+}
+.aboutBody {
+  width: 400px;
+  margin-left: 50px;
+}
+
+#caseStudySection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+  margin: 40px;
+}
+
+.caseStudyCard {
+  background-color: #f2e2e5;
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.projectImgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  overflow: hidden;
+}
+
+.caseStudyImage {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#socialIcons img {
+  margin-right: 16px;
+  height: 30px;
+  width: 30px;
+}
+#socialIcons a {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+/* size of icons; use margin */
+
+.tagLine {
+  align-items: flex-start;
+}
+
+#footerTagline {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2e2e5;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 50px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 600px) {
+  #caseStudySection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+    margin: 40px;
+  }
+  #mainNav ul {
+    display: none;
+  }
+
+  #aboutCard h1 {
+    padding: 16px;
+    margin-left: 0;
+  }
+
+  .aboutCard {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 0;
+  }
+  .aboutBody {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #footerTagline {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f2e2e5;
+  }
+}
